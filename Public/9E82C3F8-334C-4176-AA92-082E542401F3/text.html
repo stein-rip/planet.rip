@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#111">
+    <title>planet.rip - text</title>
+    <link rel="stylesheet" type="text/css" href="./assets/style.css?sha256=1e396d3babf4652993cf62f8e7e34c94ab2877c9ea77622c8db5c15f528128c4" />
+    <link rel="preload" href="./planet.json" as="fetch" type="application/json" crossorigin="anonymous">
+    <script>
+      let userAgentRegex = /Planet\/\S*/;
+      window.PLANET = {
+        visitedFromPlanetClient: !!navigator.userAgent.match(userAgentRegex),
+        assetsPrefix: './',
+      };
+
+      function breadcrumb(stubs) {
+        let container = document.createElement('div');
+        container.classList.add('breadcrumb')
+        if (!stubs || !stubs.length) {
+          return;
+        }
+
+        const getStubElem = (stub) => {
+          let elem;
+          if (stub.url) {
+            elem = document.createElement('a');
+            elem.href = stub.url;
+          } else {
+            elem = document.createElement('span');
+          }
+          elem.innerText = stub.text;
+          if (stub.classes) {
+            elem.classList.add(...stub.classes);
+          }
+          return elem;
+        };
+
+        const getSeparatorElem = () => {
+          let elem = document.createElement('span');
+          elem.innerText = '›';
+          elem.classList.add("chevron");
+          return elem;
+        }
+
+        container.append(getStubElem(stubs[0]));
+        container.append(getSeparatorElem());
+        for (let i = 1; i < stubs.length; i++)  {
+          container.append(getStubElem(stubs[i]));
+          if (i < stubs.length - 1) {
+            container.append(getSeparatorElem());
+          }
+        }
+
+        let main = document.querySelector('.main');
+        main.insertAdjacentElement('afterbegin', container);
+      }
+    </script>
+    <script type="text/javascript" src="./assets/components.js"></script>
+    
+    <link rel="icon" href="./avatar.png" sizes="144x144">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/png">
+    
+    
+<!-- Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="planet.rip" />
+<meta property="og:description" content="what happens on planet.rip
+stays on planet.rip" />
+<meta property="og:site_name" content="planet.rip" />
+
+  <meta property="og:image" content="https://k51qzi5uqu5djjhbimi9xj2n3j5e867jvfmu46n00byxbrhpggavhhdqxgfhvw.eth.sucks/avatar.png" />
+  <meta property="og:image:width" content="72" />
+  <meta property="og:image:height" content="72" />
+  <meta property="og:image:alt" content="planet.rip" />
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="twitter:title" content="planet.rip" />
+<meta name="twitter:description" content="what happens on planet.rip
+stays on planet.rip" />
+
+  <meta name="twitter:image" content="https://k51qzi5uqu5djjhbimi9xj2n3j5e867jvfmu46n00byxbrhpggavhhdqxgfhvw.eth.sucks/avatar.png" />
+
+<!-- End Open Graph Tags -->
+
+<!-- Pagination -->
+
+
+
+    
+    
+  </head>
+  <body>
+    
+    <video playsinline muted loop autoplay style="width: 100%; height: 100%; position: fixed; top: 0px; object-fit: cover; z-index: -100; filter: brightness(var(--backdrop-brightness));">
+      <source src="./assets/bg.webm" type="video/webm">
+    </video>
+    <div class="wrapper">
+      <div class="main">
+      
+<mech-box class="site-header">
+  <div class="site-header-inner">
+  
+  <div class="site-avatar">
+    <a href="./index.html"><img src="./avatar.png" alt="planet.rip" border="0" class="site-avatar-image" /></a>
+  </div>
+  
+  <div class="site-info">
+    <div class="site-title">planet.rip - text</div>
+    <div class="site-about">what happens on planet.rip
+stays on planet.rip</div>
+  </div>
+  </div>
+</mech-box>
+
+<div id="nav">
+  <div class="nav-inner">
+    <span><a href="./index.html"><img src="./assets/home.png" class="nav-icon" /></a><a href="./index.html" class="nav-item">Home</a></span>
+    <span><a href="./tags.html"><img src="./assets/tags.png" class="nav-icon" /></a><a href="./tags.html" class="nav-current">Tags</a></span>
+    <span><a href="./archive.html"><img src="./assets/archive.png" class="nav-icon" /></a><a href="./archive.html" class="nav-item">Archive</a></span>
+    <span class="dot">·</span>
+    <a href="./rss.xml" target="_blank"><img src="./assets/rss.png" width="24" alt="RSS" class="social-icon" /></a>
+    
+    
+    
+    
+    
+  </div>
+</div>
+
+<color-box theme="ice">
+  <div class="content">
+    
+    <div class="tag-container">
+      <div class="tag-caption">
+        <a href="./tags.html">Tags</a>
+        <span class="chevron">›</span>
+      </div>
+      <div class="tag-title">text</div>
+      <div class="tag-count">1 article</div>
+    </div>
+    
+
+    <div class="items">
+    
+    <div class="item">
+    <div class="item-date">Oct 25, 2024</div>
+    <div class="item-title"><a href="./0B1B9DB5-E53E-4B6A-A9A5-E7DA2D80E894/">&#x1F6A8; FIRST POST &#x1F6A8;</a></div>
+    </div>
+    
+    </div>
+
+    <div class="pages-container">
+      
+      <div class="page-placeholder"></div>
+      
+      
+      
+      <div class="page-placeholder"></div>
+      
+    </div>
+  </div>
+</color-box>
+
+      </div>
+    </div>
+  </body>
+  
+</html>
