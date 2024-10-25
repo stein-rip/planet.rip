@@ -1,0 +1,50 @@
+{
+  "about" : "what happens on planet.rip\nstays on planet.rip",
+  "acceptsDonation" : false,
+  "articles" : [
+    {
+      "articleType" : 0,
+      "attachments" : [
+
+      ],
+      "cids" : {
+
+      },
+      "content" : "👹 i have a .box site and i wonder how to actually put it to use. \n\nsomething tells me this could either be an addition, or maybe a compliment, to doing something with it? ",
+      "contentRendered" : "<p>👹 i have a .box site and i wonder how to actually put it to use.</p>\n<p>something tells me this could either be an addition, or maybe a compliment, to doing something with it?</p>\n",
+      "created" : 751524956.362648,
+      "externalLink" : "",
+      "hasAudio" : false,
+      "hasVideo" : false,
+      "id" : "0B1B9DB5-E53E-4B6A-A9A5-E7DA2D80E894",
+      "link" : "/0B1B9DB5-E53E-4B6A-A9A5-E7DA2D80E894/",
+      "slug" : "",
+      "tags" : {
+        "text" : "text"
+      },
+      "title" : "🚨 FIRST POST 🚨"
+    }
+  ],
+  "created" : 751524950.462052,
+  "discordLink" : "",
+  "githubUsername" : "",
+  "id" : "9E82C3F8-334C-4176-AA92-082E542401F3",
+  "ipns" : "k51qzi5uqu5djjhbimi9xj2n3j5e867jvfmu46n00byxbrhpggavhhdqxgfhvw",
+  "juiceboxEnabled" : false,
+  "mastodonUsername" : "",
+  "name" : "planet.rip",
+  "plausibleAPIServer" : "plausible.io",
+  "plausibleDomain" : "",
+  "plausibleEnabled" : false,
+  "podcastCategories" : {
+
+  },
+  "podcastExplicit" : false,
+  "podcastLanguage" : "en",
+  "tags" : {
+    "text" : "text"
+  },
+  "telegramUsername" : "",
+  "twitterUsername" : "",
+  "updated" : 751526857.031538
+}

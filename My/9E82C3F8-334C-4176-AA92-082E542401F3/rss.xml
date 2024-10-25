@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    >
+<channel>
+    <title>planet.rip</title>
+    <atom:link href="https://eth.sucks/ipns/k51qzi5uqu5djjhbimi9xj2n3j5e867jvfmu46n00byxbrhpggavhhdqxgfhvw/rss.xml" rel="self" type="application/rss+xml" />
+    <link>https://eth.sucks/ipns/k51qzi5uqu5djjhbimi9xj2n3j5e867jvfmu46n00byxbrhpggavhhdqxgfhvw/</link>
+    <description><![CDATA[
+    <p>what happens on planet.rip<br />
+stays on planet.rip</p>
+
+    ]]></description>
+    
+    
+    <item>
+        <title>&#x1F6A8; FIRST POST &#x1F6A8;</title>
+        <link>https://eth.sucks/ipns/k51qzi5uqu5djjhbimi9xj2n3j5e867jvfmu46n00byxbrhpggavhhdqxgfhvw/0B1B9DB5-E53E-4B6A-A9A5-E7DA2D80E894/</link>
+        <guid>https://eth.sucks/ipns/k51qzi5uqu5djjhbimi9xj2n3j5e867jvfmu46n00byxbrhpggavhhdqxgfhvw/0B1B9DB5-E53E-4B6A-A9A5-E7DA2D80E894/</guid>
+        <pubDate>Fri, 25 Oct 2024 00:55:56 -0400</pubDate>
+        
+        
+        <description><![CDATA[
+            <p>👹 i have a .box site and i wonder how to actually put it to use.</p> 
+<p>something tells me this could either be an addition, or maybe a compliment, to doing something with it?</p>
+        ]]></description>
+    </item>
+    
+</channel>
+</rss>

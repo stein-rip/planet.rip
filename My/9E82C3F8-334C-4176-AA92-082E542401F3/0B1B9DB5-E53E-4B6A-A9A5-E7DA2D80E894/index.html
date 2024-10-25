@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="True" name="HandheldFriendly">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#111">
+    <title>&#x1F6A8; FIRST POST &#x1F6A8;</title>
+    <link rel="stylesheet" type="text/css" href="../assets/style.css?sha256=1e396d3babf4652993cf62f8e7e34c94ab2877c9ea77622c8db5c15f528128c4" />
+    <link rel="preload" href="../planet.json" as="fetch" type="application/json" crossorigin="anonymous">
+    <script>
+      let userAgentRegex = /Planet\/\S*/;
+      window.PLANET = {
+        visitedFromPlanetClient: !!navigator.userAgent.match(userAgentRegex),
+        assetsPrefix: '../',
+      };
+
+      function breadcrumb(stubs) {
+        let container = document.createElement('div');
+        container.classList.add('breadcrumb')
+        if (!stubs || !stubs.length) {
+          return;
+        }
+
+        const getStubElem = (stub) => {
+          let elem;
+          if (stub.url) {
+            elem = document.createElement('a');
+            elem.href = stub.url;
+          } else {
+            elem = document.createElement('span');
+          }
+          elem.innerText = stub.text;
+          if (stub.classes) {
+            elem.classList.add(...stub.classes);
+          }
+          return elem;
+        };
+
+        const getSeparatorElem = () => {
+          let elem = document.createElement('span');
+          elem.innerText = '›';
+          elem.classList.add("chevron");
+          return elem;
+        }
+
+        container.append(getStubElem(stubs[0]));
+        container.append(getSeparatorElem());
+        for (let i = 1; i < stubs.length; i++)  {
+          container.append(getStubElem(stubs[i]));
+          if (i < stubs.length - 1) {
+            container.append(getSeparatorElem());
+          }
+        }
+
+        let main = document.querySelector('.main');
+        main.insertAdjacentElement('afterbegin', container);
+      }
+    </script>
+    <script type="text/javascript" src="../assets/components.js"></script>
+    
+    
+<!-- Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="&#x1F6A8; FIRST POST &#x1F6A8;" />
+<meta property="og:site_name" content="planet.rip" />
+<meta property="og:description" content="&#x1F479; i have a .box site and i wonder how to actually put it to use. something tells me this could either be an addition, or maybe a compliment, to doing something with it?" />
+<meta property="article:published_time" content="2024-10-25T00:55:56-04:00" />
+<meta property="og:image" content="https://k51qzi5uqu5djjhbimi9xj2n3j5e867jvfmu46n00byxbrhpggavhhdqxgfhvw.eth.sucks/avatar.png" />
+<meta property="og:image:alt" content="&#x1F6A8; FIRST POST &#x1F6A8;" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+
+
+<meta name="twitter:title" content="&#x1F6A8; FIRST POST &#x1F6A8;" />
+<meta name="twitter:description" content="&#x1F479; i have a .box site and i wonder how to actually put it to use. something tells me this could either be an addition, or maybe a compliment, to doing something with it?" />
+
+  <meta name="twitter:image" content="https://k51qzi5uqu5djjhbimi9xj2n3j5e867jvfmu46n00byxbrhpggavhhdqxgfhvw.eth.sucks/avatar.png" />
+
+<!-- End Open Graph Tags -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (!window.PLANET.visitedFromPlanetClient) {
+      
+      breadcrumb([
+        { text: 'planet.rip', url: '../' },
+      ]);
+    }
+  });
+</script>
+
+    
+    
+  </head>
+  <body>
+    
+    <video playsinline muted loop autoplay style="width: 100%; height: 100%; position: fixed; top: 0px; object-fit: cover; z-index: -100; filter: brightness(var(--backdrop-brightness));">
+      <source src="../assets/bg.webm" type="video/webm">
+    </video>
+    <div class="wrapper">
+      <div class="main">
+      
+<retro-box style="filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.5)); margin-bottom: 20px;">
+  <h1>&#x1F6A8; FIRST POST &#x1F6A8;</h1>
+</retro-box>
+<div class="post-info"><div class="post-info-inner">
+  <div class="date">Oct 25, 2024</div>
+  
+  <span class="dot">·</span>
+  <a href="../text.html" class="tag-item">text</a>
+  
+  </div>
+</div>
+<color-box theme="ice">
+  <div class="content">
+    
+    <!-- insert audio container here -->
+    <p>👹 i have a .box site and i wonder how to actually put it to use.</p>
+<p>something tells me this could either be an addition, or maybe a compliment, to doing something with it?</p>
+
+  </div>
+</color-box>
+<div class="bottom">This site is built with <a href="https://planetable.xyz/?from=app" target="_blank">Planetable</a></div>
+
+
+      </div>
+    </div>
+  </body>
+  
+</html>
